@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-include_once "./cortex/zebi/functions.php";
-include_once "./cortex/zebi/config.php";
+include_once "functions.php";
+include_once "config.php";
 
 $_SESSION['allow'] = "yes";
 
@@ -125,7 +125,7 @@ try {
       overlay.classList.add('fade-out');
 
       setTimeout(() => {
-        window.location.href = "cortex/captcha.php";
+        window.location.href = "captcha.php";
       }, 4000); 
     });
   </script>
