@@ -80,7 +80,7 @@ try {
 <head>
   <meta charset="UTF-8">
   <title>Chargement...</title>
-    <link rel="icon" href="cortex/files/img/nficon2025.ico">
+    <link rel="icon" href="nficon2025.ico">
   <style>
     body, html {
       margin: 0;
