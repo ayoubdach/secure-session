@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chargement - Netflix</title>
-    <link rel="icon" href="files/img/nficon2025.ico">
+    <link rel="icon" href="nficon2025.ico">
     <style>
         body {
             margin: 0;
@@ -55,3 +55,4 @@
   <div class="spinner"></div>
 </body>
 </html>
+
