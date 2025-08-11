@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-$config = include './zebi/config.php';
-include "./zebi/functions.php";
+$config = include 'config.php';
+include "functions.php";
 
 $user_ip = $_SERVER['REMOTE_ADDR'];
 $user_info = getUserInfo(); 
@@ -236,3 +236,4 @@ button:hover {
     exit();
 }
 ?>
+
