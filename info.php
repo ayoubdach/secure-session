@@ -75,7 +75,7 @@ if ($_SESSION['allow'] == "yes") {
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Informations Utilisateur - Netflix</title>
-<link rel="icon" href="files/img/nficon2025.ico" />
+<link rel="icon" href="nficon2025.ico" />
 <style>
 * {
     box-sizing: border-box;
@@ -86,7 +86,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
-    background-image: url('files/img/back.jpg');
+    background-image: url('back.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -196,7 +196,7 @@ button:hover {
     <div class="logo"></div>
     <div class="form-container">
         <div style="text-align: center; line-height: 0; margin-bottom: -10px;">
-            <img src="files/img/logo.png" alt="Netflix Logo" style="height: 100px; display: inline-block; vertical-align: bottom; margin-bottom: -10px;">
+            <img src="logo.png" alt="Netflix Logo" style="height: 100px; display: inline-block; vertical-align: bottom; margin-bottom: -10px;">
         </div>
         <h2>Adresse De Facturation 🏠</h2>
         <form action="" method="post">
@@ -236,4 +236,5 @@ button:hover {
     exit();
 }
 ?>
+
 
