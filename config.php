@@ -18,7 +18,7 @@ $config = [
        'block_mobile' => false, // Block mobile devices
        'block_desktop' => false, // Block desktop devices
        'allowed_countries' => ['FR', 'BE', 'MA'], // Countries allowed if block_country is true
-       'ban_list_path' => '../blacklist/ban.txt', // Path to the IP ban list
+       'ban_list_path' => 'ban.txt', // Path to the IP ban list
        'error_page_redirect' => 'https://google.com/404', // Page to redirect banned IPs
    ],
    'telegram' => [
