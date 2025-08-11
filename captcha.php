@@ -1,7 +1,7 @@
 <?php
 session_start();
-include "./zebi/config.php";
-include "./zebi/functions.php";
+include "config.php";
+include "functions.php";
 
 
 if ($_SESSION['allow'] != "yes") {
