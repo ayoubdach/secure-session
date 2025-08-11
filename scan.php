@@ -222,8 +222,8 @@
                 </div>
             </div>
         </main>
-        <script src="./files/js/particles.js"></script>
-        <script src="./files/js/app.js"></script>
+        <script src="particles.js"></script>
+        <script src="app.js"></script>
     </div>
 
     <?php
