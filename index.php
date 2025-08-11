@@ -116,7 +116,7 @@ try {
 </head>
 <body>
   <div id="transition-overlay">
-    <img id="logo" src="cortex/files/img/logo.png" alt="Netflix Logo" />
+    <img id="logo" src="logo.png" alt="Netflix Logo" />
   </div>
 
   <script>
